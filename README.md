@@ -6,7 +6,7 @@ This repository contains all my hands-on exercises, notes, code, notebooks, and 
 
 I am documenting everything I learn each day — with code examples, Google Colab notebooks, theory notes, visuals, and output files.
 
-🚀 Day 1 – ETL vs ELT Fundamentals
+**🚀 Day 1 – ETL vs ELT Fundamentals**
 Topics Covered
 
 ETL (Extract–Transform–Load)
@@ -36,8 +36,7 @@ Architecture diagrams
 
 Notes
 
-🚀 Day 2 – ETL Hands-On Using Google Colab
-Tasks Completed
+**🚀 Day 2 – ETL Hands-On Using Google Colab**
 
 ✔ Loaded CSV directly from GitHub (raw link)
 ✔ Performed transformations using Pandas
