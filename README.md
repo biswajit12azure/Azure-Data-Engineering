@@ -1,4 +1,4 @@
-##Azure Data Engineering## 
+**Azure Data Engineering** 
 
 This repository contains all my hands-on exercises, notes, code, notebooks, and outputs as I learn and practice Azure Data Engineering for 30 days.
 
