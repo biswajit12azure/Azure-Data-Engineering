@@ -7,6 +7,7 @@ This repository contains all my hands-on exercises, notes, code, notebooks, and 
 I am documenting everything I learn each day — with code examples, Google Colab notebooks, theory notes, visuals, and output files.
 
 **🚀 Day 1 – ETL vs ELT Fundamentals**
+
 Topics Covered
 
 ETL (Extract–Transform–Load)
