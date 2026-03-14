@@ -102,7 +102,6 @@ Contains:
 - diagrams
 
 ## 📚 Repository Structure
-
 azure-data-engineering
 │
 ├── day-01-etl-elt
