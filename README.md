@@ -2,12 +2,20 @@
 
 This repository contains all my hands-on exercises, notes, code, notebooks, and outputs as I learn and practice Azure Data Engineering for 30 days.
 
-🗓️ Day-wise Progress
+## 🗓️ Day-wise Progress
+
+Day | Topic | Status
+--- | --- | ---
+Day 1 | ETL vs ELT | ✅ Completed
+Day 2 | ETL Hands-on (Google Colab) | ✅ Completed
+Day 3 | Batch vs Stream Processing | ✅ Completed
+Day 4 | Data Lake vs Warehouse vs Lakehouse | ⏳ Coming
 
 I am documenting everything I learn each day — with code examples, Google Colab notebooks, theory notes, visuals, and output files.
 
 ## 🚀 Day 1 – ETL vs ELT Fundamentals
 
+![ETL Architecture](day-01-etl-elt/etl-elt-diagram.jpeg)
 ### Topics Covered
 
 ETL (Extract–Transform–Load)
