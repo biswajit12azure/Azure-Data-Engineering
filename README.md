@@ -20,7 +20,7 @@ Tools used in ETL vs ELT
 
 Why ELT is preferred in modern cloud systems
 
-## Deliverables
+### Deliverables
 
 Theory notes
 
