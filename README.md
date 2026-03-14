@@ -103,26 +103,26 @@ Contains:
 
 ## 📚 Repository Structure
 
-
+```
 azure-data-engineering
 │
 ├── day-01-etl-elt
-│ ├── ETL-vs-ELT.md
-│ ├── diagrams
-│ └── notes
+│   ├── ETL-vs-ELT.md
+│   ├── diagrams
+│   └── notes
 │
 ├── day-02-etl-practical
-│ ├── etl_colab_notebook.ipynb
-│ ├── processed_tips.csv
-│ └── day2-notes.md
+│   ├── etl_colab_notebook.ipynb
+│   ├── processed_tips.csv
+│   └── day2-notes.md
 │
 ├── day-03-batch-stream
-│ ├── batch-vs-stream.md
-│ └── diagrams
+│   ├── batch-vs-stream.md
+│   └── diagrams
 │
 ├── datasets
-│ └── raw
+│   └── raw
 │
 ├── README.md
 └── LICENSE
-
+```
