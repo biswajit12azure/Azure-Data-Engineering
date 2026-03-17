@@ -162,7 +162,6 @@ azure-data-engineering
 │   └── diagrams
 │
 ├── datasets
-│   └── raw
 │
 ├── README.md
 └── LICENSE
