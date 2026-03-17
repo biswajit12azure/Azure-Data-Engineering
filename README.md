@@ -9,7 +9,8 @@ Day | Topic | Status
 Day 1 | ETL vs ELT | ✅ Completed
 Day 2 | ETL Hands-on (Google Colab) | ✅ Completed
 Day 3 | Batch vs Stream Processing | ✅ Completed
-Day 4 | Data Lake vs Warehouse vs Lakehouse | ⏳ Coming
+Day 4 | Data Lake vs Warehouse vs Lakehouse | ✅ Completed
+Day 5 | Delta Lake Fundamentals | ⏳ Next
 
 I am documenting everything I learn each day — with code examples, Google Colab notebooks, theory notes, visuals, and output files.
 
