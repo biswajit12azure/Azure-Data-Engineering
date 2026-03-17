@@ -157,6 +157,10 @@ azure-data-engineering
 │   ├── batch-vs-stream.md
 │   └── diagrams
 │
+├── day-04-data-architecture
+│   ├── data-lake-vs-warehouse-vs-lakehouse.md
+│   └── diagrams
+│
 ├── datasets
 │   └── raw
 │
