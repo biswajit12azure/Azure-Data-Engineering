@@ -110,6 +110,25 @@ Contains:
 - notes
 - diagrams
 
+## 🚀 Day 4 – Data Lake vs Data Warehouse vs Lakehouse
+
+### Topics Covered
+
+- Data Lake (schema-on-read, unstructured data)
+- Data Warehouse (schema-on-write, structured data)
+- Lakehouse architecture
+- Introduction to Delta Lake
+
+### Deliverables
+
+📂 Folder: `day-04-data-architecture/`
+
+Contains:
+
+- data-lake-vs-warehouse-vs-lakehouse.md
+- Notes
+- Diagrams
+  
 ## 🛠 Technologies Used
 
 - Python
