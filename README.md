@@ -112,6 +112,7 @@ Contains:
 
 ## 🚀 Day 4 – Data Lake vs Data Warehouse vs Lakehouse
 
+![Architecture](day-04-data-architecture/datawarehouse vs datalake vs lakehouse.png)
 ### Topics Covered
 
 - Data Lake (schema-on-read, unstructured data)
