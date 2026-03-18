@@ -71,7 +71,7 @@ Upload the following into raw:
 
 ## 🐍 6. Python Code to Access Azurite
 
-Create a file named: python-access-azurite.py
+Create a file named: adl.py
 
 from azure.storage.blob import BlobServiceClient
 
