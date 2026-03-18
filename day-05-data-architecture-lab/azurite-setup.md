@@ -109,7 +109,6 @@ The API version 2026-02-06 is not supported by Azurite
 ✔ Fix:
 azurite --skipApiVersionCheck
 
-
 ❌ AuthorizationFailure
 
 Occurs when connection string or key is mismatched.
@@ -117,10 +116,10 @@ Occurs when connection string or key is mismatched.
 ✔ Fix:
 Use the exact default Azurite key.
 
-
 ❌ ModuleNotFoundError: No module named 'azure'
 
 ✔  Fix: Install Azure Blob SDK
+
 pip install azure-storage-blob
 
 ## 📦 7. Folder Structure for Day-05
