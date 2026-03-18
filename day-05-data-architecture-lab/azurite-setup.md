@@ -90,7 +90,6 @@ for blob in container.list_blobs():
     print(" -", blob.name)
 
 Run:
-
 python adl.py
 
 Expected output:
