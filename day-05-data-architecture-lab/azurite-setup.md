@@ -100,11 +100,18 @@ day-05-data-architecture-lab/
 
 ## 🎉 10. Summary
 Today you created a fully functional local Data Lake using Azurite:
+
 ✔ Created Blob containers
+
 ✔ Organized data into raw/processed/curated
+
 ✔ Uploaded CSV & JSON files
+
 ✔ Accessed data with Python
+
 ✔ Resolved API + authentication issues
+
 ✔ Built a local Azure-like development environment
+
 This is exactly how professional Data Engineers test pipelines before pushing to Azure.
 
