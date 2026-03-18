@@ -43,31 +43,36 @@ Table Storage	http://127.0.0.1:10002/devstoreaccount1
 ## 🗂️ 4. Create Data Lake Folder Structure
 
 - Open Azure Storage Explorer →  Right-click → Create Blob Container
-- Create:
+- Create Blob Containers:
 
-  raw
+  /raw
 
-  processed
+  /processed
 
-  curated
+  /curated
 
 - These represent:
 
-•	🟤 Bronze → raw
+	🟤 Bronze → raw
 
-•	⚪ Silver → processed
+	⚪ Silver → processed
 
-•	🟡 Gold → curated
+	🟡 Gold → curated
 
 ## 📝 5. Upload Sample Files
+
 Upload the following into raw:
-•	employees.csv
-•	sales.json
-•	data.json
+
+•	customers.csv
+
+•	device.json
+
 (You can create simple test files.)
 
 ## 🐍 6. Python Code to Access Azurite
+
 Create a file named: python-access-azurite.py
+
 from azure.storage.blob import BlobServiceClient
 
 connection_string = (
@@ -83,11 +88,17 @@ container = client.get_container_client("raw")
 print("Blobs in 'raw' container:")
 for blob in container.list_blobs():
     print(" -", blob.name)
+
 Run:
-python python-access-azurite.py
+
+python adl.py
+
 Expected output:
+
 Blobs in 'raw' container:
+ 
  - curomers.csv
+ 
  - device.json
 
 ## 🛠️ Fixing Common Errors
