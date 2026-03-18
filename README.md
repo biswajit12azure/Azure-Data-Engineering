@@ -148,10 +148,12 @@ Accessing Azurite using Python (azure-storage-blob)
 Listing blobs programmatically
 Handling common Azurite errors (API versions, authentication, etc.)
 
-Hands-on Steps Performed
+### Hands-on Steps Performed
+
 🟦 1. Installed Azurite (Local Storage Emulator)
 npm install -g azurite
 azurite --skipApiVersionCheck
+
 🟦 2. Started Azurite
 
 Azurite exposed the following local endpoints:
@@ -159,24 +161,16 @@ Blob Storage → http://127.0.0.1:10000/devstoreaccount1
 Queue Storage → http://127.0.0.1:10001/devstoreaccount1
 Table Storage → http://127.0.0.1:10002/devstoreaccount1
 
-Default Storage Account Credentials:
-Account Name: devstoreaccount1  
-Account Key: Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 🟦 3. Created Data Lake Container Structure
-
 ✔ raw/
 ✔ processed/
 ✔ curated/
-
 (Using Azure Storage Explorer)
 
 🟦 4. Wrote Python script to access Azurite
 from azure.storage.blob import BlobServiceClient
 connection_string = (
-    "DefaultEndpointsProtocol=http;"
-    "AccountName=devstoreaccount1;"
-    "AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;"
-    "BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;"
+    "Actual Connection string"
 )
 client = BlobServiceClient.from_connection_string(connection_string)
 container = client.get_container_client("raw")
@@ -184,8 +178,10 @@ container = client.get_container_client("raw")
 print("Blobs in container:")
 for blob in container.list_blobs():
     print(blob.name)
+
 🟦 5. Successfully listed uploaded files 🎉
-Deliverables
+
+### Deliverables
 
 📂 Folder: day-05-data-architecture-lab/
 
