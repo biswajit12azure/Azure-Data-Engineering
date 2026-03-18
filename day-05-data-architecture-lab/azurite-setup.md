@@ -101,17 +101,23 @@ Blobs in 'raw' container:
  - device.json
 
 ## 🛠️ Fixing Common Errors
+
 ❌ API version not supported
+
 The API version 2026-02-06 is not supported by Azurite
+
 ✔ Fix:
 azurite --skipApiVersionCheck
 
 ❌ AuthorizationFailure
+
 Occurs when connection string or key is mismatched.
+
 ✔ Fix:
 Use the exact default Azurite key.
 
 ❌ ModuleNotFoundError: No module named 'azure'
+
 ✔ Install Azure Blob SDK:
 pip install azure-storage-blob
 
