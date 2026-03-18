@@ -71,7 +71,7 @@ Upload the following into raw:
 
 ## 🐍 6. Python Code to Access Azurite
 
-Create a file named: adl.py
+### Create a file named: adl.py
 
 from azure.storage.blob import BlobServiceClient
 
@@ -89,7 +89,7 @@ print("Blobs in 'raw' container:")
 for blob in container.list_blobs():
     print(" -", blob.name)
 
-Run:
+### Run:
 python adl.py
 
 ### Expected output:
