@@ -10,7 +10,8 @@ Day 1 | ETL vs ELT | ✅ Completed
 Day 2 | ETL Hands-on (Google Colab) | ✅ Completed
 Day 3 | Batch vs Stream Processing | ✅ Completed
 Day 4 | Data Lake vs Warehouse vs Lakehouse | ✅ Completed
-Day 5 | Delta Lake Fundamentals | ⏳ Next
+Day 5 | Data Lake Lab using Azurite | ✅ Completed
+Day 6 | Delta Lake Fundamentals  |  Upcoming
 
 I am documenting everything I learn each day — with code examples, Google Colab notebooks, theory notes, visuals, and output files.
 
@@ -130,7 +131,71 @@ Contains:
 - data-lake-vs-warehouse-vs-lakehouse.md
 - Notes
 - Diagrams
-  
+
+## 🚀 Day 5 – Azure Storage (Azurite) Local Data Lake Lab
+
+![Aurite Architecturee](day-05-data-architecture-lab/storageexplorerarch_41_34.gif)
+### Topics Covered
+
+- What is Azurite (Azure Storage Emulator)
+- How to simulate a Data Lake locally
+- Creating containers:
+   raw/
+   processed/
+   curated/
+Uploading sample JSON & CSV files
+Accessing Azurite using Python (azure-storage-blob)
+Listing blobs programmatically
+Handling common Azurite errors (API versions, authentication, etc.)
+
+Hands-on Steps Performed
+🟦 1. Installed Azurite (Local Storage Emulator)
+npm install -g azurite
+azurite --skipApiVersionCheck
+🟦 2. Started Azurite
+
+Azurite exposed the following local endpoints:
+Blob Storage → http://127.0.0.1:10000/devstoreaccount1
+Queue Storage → http://127.0.0.1:10001/devstoreaccount1
+Table Storage → http://127.0.0.1:10002/devstoreaccount1
+
+Default Storage Account Credentials:
+Account Name: devstoreaccount1  
+Account Key: Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
+🟦 3. Created Data Lake Container Structure
+
+✔ raw/
+✔ processed/
+✔ curated/
+
+(Using Azure Storage Explorer)
+
+🟦 4. Wrote Python script to access Azurite
+from azure.storage.blob import BlobServiceClient
+connection_string = (
+    "DefaultEndpointsProtocol=http;"
+    "AccountName=devstoreaccount1;"
+    "AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;"
+    "BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;"
+)
+client = BlobServiceClient.from_connection_string(connection_string)
+container = client.get_container_client("raw")
+
+print("Blobs in container:")
+for blob in container.list_blobs():
+    print(blob.name)
+🟦 5. Successfully listed uploaded files 🎉
+Deliverables
+
+📂 Folder: day-05-data-architecture-lab/
+
+Contains:
+- azurite-lab.md — full steps + explanation
+- adl.py
+- screenshots/ (Azurite running, Storage Explorer UI)
+- sample-data/ folder
+- azurite_lab_architecture.png
+
 ## 🛠 Technologies Used
 
 - Python
@@ -162,6 +227,11 @@ azure-data-engineering
 │   ├── data-lake-vs-warehouse-vs-lakehouse.md
 │   └── diagrams
 │
+├── day-05-data-architecture-lab
+│   ├── azurite-setup.md
+│   ├── adl.py
+│   └── diagrams
+│ 
 ├── datasets
 │
 ├── README.md
