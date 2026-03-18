@@ -92,7 +92,7 @@ for blob in container.list_blobs():
 Run:
 python adl.py
 
-Expected output:
+### Expected output:
 
 Blobs in 'raw' container:
  
