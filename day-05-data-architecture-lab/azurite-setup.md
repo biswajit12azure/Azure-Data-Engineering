@@ -42,18 +42,21 @@ Table Storage	http://127.0.0.1:10002/devstoreaccount1
 
 ## 🗂️ 4. Create Data Lake Folder Structure
 
-- Open Azure Storage Explorer →
-
-- Right-click → Create Blob Container
-
+- Open Azure Storage Explorer →  Right-click → Create Blob Container
 - Create:
+
   raw
+
   processed
+
   curated
 
 - These represent:
+
 •	🟤 Bronze → raw
+
 •	⚪ Silver → processed
+
 •	🟡 Gold → curated
 
 ## 📝 5. Upload Sample Files
