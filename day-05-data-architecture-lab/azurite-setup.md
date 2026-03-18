@@ -88,13 +88,15 @@ pip install azure-storage-blob
 
 ## 📦 9. Folder Structure for Day-05
 
+```
 day-05-data-architecture-lab/
 │
 ├── azurite-setup.md
 ├── adl.py
 ├── diagrams
 ├── sample-data/
-│ 
+└── LICENSE
+```
 
 ## 🎉 10. Summary
 Today you created a fully functional local Data Lake using Azurite:
