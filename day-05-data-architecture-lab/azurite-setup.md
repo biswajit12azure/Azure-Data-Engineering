@@ -87,6 +87,7 @@ Use the exact default Azurite key.
 pip install azure-storage-blob
 
 ## 📦 9. Folder Structure for Day-05
+
 day-05-data-architecture-lab/
 │
 ├── azurite-lab.md
