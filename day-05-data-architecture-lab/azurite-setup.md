@@ -90,13 +90,11 @@ pip install azure-storage-blob
 
 day-05-data-architecture-lab/
 │
-├── azurite-lab.md
-├── python-access-azurite.py
-├── screenshots/
-│   ├── azurite_running.png
-│   ├── storage_explorer_containers.png
-│   └── uploaded_files.png
-└── sample-data/
+├── azurite-setup.md
+├── adl.py
+├── diagrams
+├── sample-data/
+│ 
 
 ## 🎉 10. Summary
 Today you created a fully functional local Data Lake using Azurite:
