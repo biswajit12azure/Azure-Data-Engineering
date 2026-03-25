@@ -210,7 +210,11 @@ Contains:
 During this lab, I practiced Delta Lake operations using PySpark on Databricks:
 
 ✔️ Created a Delta Table
-
+```
+data = [(1, "John", 5000), (2, "Ana", 6000)]
+df = spark.createDataFrame(data, ["id", "name", "salary"])
+df.write.format("delta").mode("overwrite").saveAsTable("employees_delta")
+```
 Generated a small DataFrame
 
 Saved it in Delta format
