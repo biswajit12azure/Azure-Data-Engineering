@@ -94,6 +94,8 @@ How Delta auto-updates the commit history
 ## 🖼️ Delta Log Screenshot
 
 ![Delta Log Example](delta-log-example.png)
+
+## 📦Folder Structure for Day-06
 ```
 📁 day-06-delta-lake/
 │
