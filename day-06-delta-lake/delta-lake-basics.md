@@ -15,6 +15,7 @@ A Delta table contains two components:
        ├── 00000000000000000000.json
        ├── 00000000000000000001.json
        └── 00000000000000000002.json
+       
 Parquet files → actual data
 _delta_log JSON files → metadata, versions, schema, operations
 ✅ 2. ACID Transactions
