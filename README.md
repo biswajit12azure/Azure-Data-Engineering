@@ -195,6 +195,7 @@ Contains:
 
 ## 🚀 Day 6 – Delta Lake Fundamentals (Databricks Hands-On)
 
+![Delta Lake](day-06-delta-lake/Screenshot-Databricks.jpeg)
 ### Topics Covered
 
 - What is Delta Lake?
