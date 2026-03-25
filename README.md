@@ -257,7 +257,10 @@ dt.update(
 spark.sql("DESCRIBE HISTORY employees_delta").show(truncate=False)
 ```
 ✔️ Performed Time Travel
-
+```
+SELECT * FROM employees_delta
+TIMESTAMP AS OF '2026-03-23T06:07:00';
+```
 Viewed older versions using:
 
 VERSION AS OF <version-number>
@@ -279,7 +282,9 @@ Inside _delta_log/, I checked:
 Using:
 
 DESCRIBE HISTORY delta.`path`
-
+```
+DESCRIBE HISTORY employees_delta;
+```
 Key Learnings
 - Delta Lake makes data reliable, consistent, and trackable.
 - Every write is stored as a version — enabling Time Travel.
