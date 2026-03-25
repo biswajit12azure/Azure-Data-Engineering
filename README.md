@@ -192,6 +192,72 @@ Contains:
 - sample-data/ folder
 - azurite_lab_architecture.png
 
+## 🚀 Day 6 – Delta Lake Fundamentals (Databricks Hands-On)
+
+### Topics Covered
+
+- What is Delta Lake?
+- Delta file structure
+- ACID transactions
+- Schema enforcement
+- Time Travel (versioning)
+- MERGE/UPSERT operations
+
+### 🧪 Hands-On Lab (Using Databricks Community Edition)
+
+During this lab, I practiced Delta Lake operations using PySpark on Databricks:
+
+✔️ Created a Delta Table
+
+Generated a small DataFrame
+
+Saved it in Delta format
+
+✔️ Performed Updates
+
+Updated rows using Delta commands
+
+Observed ACID compliance
+
+✔️ Performed Time Travel
+
+Viewed older versions using:
+
+VERSION AS OF <version-number>
+
+and
+
+TIMESTAMP AS OF <timestamp>
+✔️ Explored Delta Log
+
+Inside _delta_log/, I checked:
+
+JSON commit files
+Schema changes
+Transaction history
+✔️ Viewed Table History
+
+Using:
+
+DESCRIBE HISTORY delta.`path`
+Key Learnings
+Delta Lake makes data reliable, consistent, and trackable.
+Every write is stored as a version — enabling Time Travel.
+_delta_log maintains the transaction history.
+Delta tables support ACID operations even on large distributed datasets.
+Modern Lakehouse implementations (like Azure Databricks) rely heavily on Delta for reliability.
+
+### Deliverables
+
+📂 Folder: day-06-delta-lake/
+
+Contains:
+- delta-lake-basics.md
+- delta-table-history.png
+- delta-log-example.png
+- Notes
+- Screenshots from Databricks lab
+
 ## 🛠 Technologies Used
 
 - Python
@@ -199,6 +265,10 @@ Contains:
 - Google Colab
 - GitHub
 - Data Engineering Concepts
+- PySpark
+- Azurite
+- Azure Storage Concepts
+- Databricks
 
 ## 📚 Repository Structure
 
