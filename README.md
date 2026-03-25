@@ -265,24 +265,27 @@ VERSION AS OF <version-number>
 and
 
 TIMESTAMP AS OF <timestamp>
+
 ✔️ Explored Delta Log
 
 Inside _delta_log/, I checked:
 
-JSON commit files
-Schema changes
-Transaction history
+- JSON commit files
+- Schema changes
+- Transaction history
+
 ✔️ Viewed Table History
 
 Using:
 
 DESCRIBE HISTORY delta.`path`
+
 Key Learnings
-Delta Lake makes data reliable, consistent, and trackable.
-Every write is stored as a version — enabling Time Travel.
-_delta_log maintains the transaction history.
-Delta tables support ACID operations even on large distributed datasets.
-Modern Lakehouse implementations (like Azure Databricks) rely heavily on Delta for reliability.
+- Delta Lake makes data reliable, consistent, and trackable.
+- Every write is stored as a version — enabling Time Travel.
+- _delta_log maintains the transaction history.
+- Delta tables support ACID operations even on large distributed datasets.
+- Modern Lakehouse implementations (like Azure Databricks) rely heavily on Delta for reliability.
 
 ### Deliverables
 
