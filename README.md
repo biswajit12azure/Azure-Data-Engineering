@@ -11,7 +11,8 @@ Day 2 | ETL Hands-on (Google Colab) | ✅ Completed
 Day 3 | Batch vs Stream Processing | ✅ Completed
 Day 4 | Data Lake vs Warehouse vs Lakehouse | ✅ Completed
 Day 5 | Data Lake Lab using Azurite | ✅ Completed
-Day 6 | Delta Lake Fundamentals  |  Upcoming
+Day 6 | Delta Lake Fundamentals  |  ✅ Completed
+Day 7 | File Formats (CSV, Parquet, Avro)  |  Upcoming
 
 I am documenting everything I learn each day — with code examples, Google Colab notebooks, theory notes, visuals, and output files.
 
@@ -297,7 +298,14 @@ azure-data-engineering
 │   ├── azurite-setup.md
 │   ├── adl.py
 │   └── diagrams
-│ 
+│
+├── day-06-delta-lake/
+│   ├── delta-lake-basics.md
+│   ├── delta-table-history.png
+│   ├── delta-log-example.png
+│   ├── Screenshot-Databricks.jpeg
+│   └── notes/
+│
 ├── datasets
 │
 ├── README.md
