@@ -95,15 +95,15 @@ How Delta auto-updates the commit history
 Add your screenshot here:
 
 ![Delta Log Example](delta-log-example.png)
-📁 Recommended Folder Structure
-
-day-06-delta-lake/
+```
+📁 day-06-delta-lake/
 │
 ├── delta-lake-basics.md
 ├── delta-table-history.png
 ├── delta-log-example.png
 ├── screenshot-databricks-ui.jpeg
 └── notes/
+```
 
 🏁 Summary
 
