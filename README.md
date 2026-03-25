@@ -216,7 +216,13 @@ df = spark.createDataFrame(data, ["id", "name", "salary"])
 df.write.format("delta").mode("overwrite").saveAsTable("employees_delta")
 ```
 Generated a small DataFrame
+```
+data = [(1, "John", 5000),
+        (2, "Ana", 6000)]
 
+df = spark.createDataFrame(data, ["id", "name", "salary"])
+df.show()
+```
 Saved it in Delta format
 
 ✔️ Performed Updates
