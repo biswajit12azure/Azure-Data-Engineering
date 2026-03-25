@@ -94,6 +94,7 @@ Add your screenshot here:
 
 ![Delta Log Example](delta-log-example.png)
 📁 Recommended Folder Structure
+
 day-06-delta-lake/
 │
 ├── delta-lake-basics.md
@@ -101,6 +102,7 @@ day-06-delta-lake/
 ├── delta-log-example.png
 ├── screenshot-databricks-ui.jpeg
 └── notes/
+
 🏁 Summary
 
 By completing Day 6, you now understand:
