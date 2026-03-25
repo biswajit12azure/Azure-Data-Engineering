@@ -1,101 +1,110 @@
 📘 Day 6 – Delta Lake Fundamentals
 
-Delta Lake is an open-source storage layer that brings ACID transactions, schema enforcement, and time travel to data lakes. It is widely used in Databricks, Spark, and modern Lakehouse architectures.
+Delta Lake is an open-source storage layer that brings ACID transactions, schema enforcement, and time travel to your data lake.
+It is the foundation of modern Lakehouse Architecture and widely used in Databricks & Apache Spark.
 
 📌 What You Learned Today
 ✅ 1. Delta File Structure
 
-Delta Lake stores data in:
+A Delta table contains two components:
 
-📁 table/
+📁 employees_delta/
  ├── part-0000.snappy.parquet
  ├── part-0001.snappy.parquet
  └── _delta_log/
        ├── 00000000000000000000.json
        ├── 00000000000000000001.json
        └── 00000000000000000002.json
-Parquet = actual data
-_delta_log = history & metadata
+Parquet files → actual data
+_delta_log JSON files → metadata, versions, schema, operations
 ✅ 2. ACID Transactions
 
-Delta Lake ensures:
+Delta Lake ensures data reliability with full ACID support:
 
 Feature	Description
-Atomicity	Every write is all or nothing
+Atomicity	A write happens fully or not at all
 Consistency	Table always stays valid
-Isolation	Readers never see partial writes
-Durability	Committed changes are permanent
+Isolation	Readers never see half-written data
+Durability	Once committed, data stays safe
 
-This makes Delta Lake production-ready for pipelines.
+This makes Delta production-grade for batch + streaming workloads.
 
 ✅ 3. Schema Enforcement
 
-Delta Lake prevents bad data.
+Delta Lake prevents dirty/bad data from being written.
 
-Examples of protected violations:
+Examples of blocked violations:
 
-Wrong column type
+Wrong column datatype
 Missing required columns
 Extra unexpected columns
+Malformed schema changes
+
+Result: Your pipeline becomes trustworthy & stable.
+
 ✅ 4. Time Travel
 
-Delta Lake keeps a version history in _delta_log, enabling:
+Delta Lake keeps a full version history inside _delta_log.
 
-Restore old table version
-Debug historical data
-Compare changes
-Auditing
+Use cases:
 
-Example operations:
+Restore previous table versions
+Debug failures
+Re-run machine learning on older data
+Audit & compliance
 
-VERSION AS OF 0
-TIMESTAMP AS OF '2024-01-01'
-✅ 5. MERGE (UPSERT)
+Example operations (not included here by request):
 
-Merge allows transactional operations like:
+View version: VERSION AS OF X
+View timestamp: TIMESTAMP AS OF 'YYYY-MM-DD'
+✅ 5. MERGE (UPSERT) Operations
 
-Insert new records
-Update existing records
-Deduplicate data
+Delta allows you to:
 
-This is critical for CDC (Change Data Capture) and incremental ETL.
+Insert new rows
+Update existing rows
+Deduplicate incremental data
+Perform CDC (Change Data Capture)
 
-📚 Hands-On Performed (Using Databricks)
+This makes MERGE essential for incremental ETL pipelines.
 
-Today you executed the following tasks:
+🧪 Hands-On Performed (Using Databricks)
 
-Created a Spark DataFrame
-Saved it as a Delta table
-Validated table using DESCRIBE DETAIL
-Updated Delta table
-Retrieved earlier version
-Explored transaction logs from Databricks UI
+During this lab you:
+
+✔ Created a Spark DataFrame
+✔ Saved it as a Delta table
+✔ Viewed metadata using DESCRIBE DETAIL
+✔ Viewed operation history using DESCRIBE HISTORY
+✔ Checked table schema
+✔ Explored Delta transaction logs (JSON)
+✔ Observed table versioning
 
 You also saw:
 
-Table metadata (version, size, schema)
-Operation history (DESCRIBE HISTORY)
-How Delta auto-manages Parquet + logs
-🖼️ Delta Log Structure (Upload Your Screenshot)
-
-When you upload:
-
+Table size, number of Parquet files
+Auto-managed Delta metadata
+Delta log commit history
+🖼️ Delta Log Screenshot (Add Your Image)
 ![Delta Log Example](delta-log-example.png)
-📁 Folder Structure (for GitHub)
+📁 Recommended Folder Structure
 day-06-delta-lake/
 │
 ├── delta-lake-basics.md
 ├── delta-table-history.png
 ├── delta-log-example.png
-├── Screenshot-Databricks.jpeg
-└── notes
+├── screenshot-databricks-ui.jpeg
+└── notes/
 🏁 Summary
 
-By completing this module, you now understand how Delta Lake powers modern data lakes with:
+By completing Day 6, you now understand:
 
-ACID guarantees
-Robust schema management
-Powerful versioning/time travel
-Incremental data engineering with MERGE
+✔ How Delta Lake stores & manages data
+✔ ACID transaction support
+✔ Schema enforcement & evolution
+✔ Time travel & table versioning
+✔ Incremental ETL using MERGE
+✔ How Databricks displays Delta metadata
 
-These are core skills for any Azure Data Engineer, especially when working with Databricks.
+These skills are core for any Azure Data Engineer working with
+Azure Databricks, Lakehouse, and modern enterprise ETL pipelines.
