@@ -11,6 +11,7 @@ Azure Databricks & Apache Spark.
 
 A Delta table contains two key components:
 
+```
 📁 employees_delta/
  ├── part-0000.snappy.parquet
  ├── part-0001.snappy.parquet
@@ -18,6 +19,7 @@ A Delta table contains two key components:
       ├── 00000000000000000000.json
       ├── 00000000000000000001.json
       └── 00000000000000000002.json
+```
 Parquet files → actual data
 _delta_log JSON files → metadata, schema, operations, versions
 ✅ 2. ACID Transactions
