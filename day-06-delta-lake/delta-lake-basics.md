@@ -86,13 +86,11 @@ You performed:
 ✔ Checked number of files & metadata
 
 You also learned:
-
 How Delta manages Parquet + logs
 How Databricks shows table versions
 How Delta auto-updates the commit history
-🖼️ Delta Log Screenshot
 
-Add your screenshot here:
+🖼️ Delta Log Screenshot
 
 ![Delta Log Example](delta-log-example.png)
 ```
@@ -101,7 +99,7 @@ Add your screenshot here:
 ├── delta-lake-basics.md
 ├── delta-table-history.png
 ├── delta-log-example.png
-├── screenshot-databricks-ui.jpeg
+├── Screenshot-Databricks.jpeg
 └── notes/
 ```
 
