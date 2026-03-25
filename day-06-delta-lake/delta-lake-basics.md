@@ -78,7 +78,7 @@ This is essential for incremental ETL pipelines.
 
 ## 🧪 Hands-On Performed (Using Databricks)
 
-You performed:
+### You performed:
 
 ✔ Created a Spark DataFrame
 
@@ -94,10 +94,10 @@ You performed:
 
 ✔ Checked number of files & metadata
 
-You also learned:
-How Delta manages Parquet + logs
-How Databricks shows table versions
-How Delta auto-updates the commit history
+### You also learned:
+- How Delta manages Parquet + logs
+- How Databricks shows table versions
+- How Delta auto-updates the commit history
 
 ## 🖼️ Delta Log Screenshot
 
@@ -116,7 +116,7 @@ How Delta auto-updates the commit history
 
 ## 🏁 Summary
 
-By completing Day 6, you now understand:
+### By completing Day 6, you now understand:
 
 ✔ How Delta Lake stores and manages data
 
@@ -130,7 +130,7 @@ By completing Day 6, you now understand:
 
 ✔ How Databricks shows Delta logs & metadata
 
-These are core skills for Azure Data Engineers working with:
+### These are core skills for Azure Data Engineers working with:
 
 - Azure Databricks
 - Delta Lake
