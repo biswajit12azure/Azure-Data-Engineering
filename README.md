@@ -230,9 +230,32 @@ df.write.format("delta").mode("overwrite").saveAsTable("employees_delta")
 ✔️ Performed Updates
 
 Updated rows using Delta commands
+```
+from delta.tables import DeltaTable
 
+delta_tbl = DeltaTable.forName(spark, "employees_delta")
+
+delta_tbl.update(
+    condition="name = 'John'",
+    set={"salary": "salary + 500"}
+)
+```
 Observed ACID compliance
+```
+from delta.tables import DeltaTable
 
+# Load the Delta table
+dt = DeltaTable.forName(spark, "employees_delta")
+
+# Update operation
+dt.update(
+    condition="id = 1",
+    set={"salary": "6000"}
+)
+
+# View history
+spark.sql("DESCRIBE HISTORY employees_delta").show(truncate=False)
+```
 ✔️ Performed Time Travel
 
 Viewed older versions using:
