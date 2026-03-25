@@ -224,7 +224,9 @@ df = spark.createDataFrame(data, ["id", "name", "salary"])
 df.show()
 ```
 Saved it in Delta format
-
+```
+df.write.format("delta").mode("overwrite").saveAsTable("employees_delta")
+```
 ✔️ Performed Updates
 
 Updated rows using Delta commands
