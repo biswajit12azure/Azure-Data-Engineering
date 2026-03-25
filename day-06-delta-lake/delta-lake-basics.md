@@ -1,4 +1,4 @@
-📘 Day 6 – Delta Lake Fundamentals
+# 📘 Day 6 – Delta Lake Fundamentals
 
 Delta Lake is an open-source storage layer that brings ACID transactions,
 schema enforcement, and time travel to your data lake.
@@ -6,7 +6,7 @@ schema enforcement, and time travel to your data lake.
 It is the foundation of the Lakehouse Architecture and widely used in
 Azure Databricks & Apache Spark.
 
-📌 What You Learned Today
+## 📌 What You Learned Today
 ✅ 1. Delta File Structure
 
 A Delta table contains two key components:
@@ -22,6 +22,7 @@ A Delta table contains two key components:
 ```
 Parquet files → actual data
 _delta_log JSON files → metadata, schema, operations, versions
+
 ✅ 2. ACID Transactions
 
 Delta Lake provides full ACID guarantees:
@@ -73,7 +74,7 @@ Change Data Capture (CDC)
 
 This is essential for incremental ETL pipelines.
 
-🧪 Hands-On Performed (Using Databricks)
+## 🧪 Hands-On Performed (Using Databricks)
 
 You performed:
 
@@ -90,7 +91,7 @@ How Delta manages Parquet + logs
 How Databricks shows table versions
 How Delta auto-updates the commit history
 
-🖼️ Delta Log Screenshot
+## 🖼️ Delta Log Screenshot
 
 ![Delta Log Example](delta-log-example.png)
 ```
@@ -103,7 +104,7 @@ How Delta auto-updates the commit history
 └── notes/
 ```
 
-🏁 Summary
+## 🏁 Summary
 
 By completing Day 6, you now understand:
 
