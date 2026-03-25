@@ -7,7 +7,7 @@ It is the foundation of the Lakehouse Architecture and widely used in
 Azure Databricks & Apache Spark.
 
 ## 📌 What You Learned Today
-✅ 1. Delta File Structure
+### ✅ 1. Delta File Structure
 
 A Delta table contains two key components:
 
@@ -21,56 +21,58 @@ A Delta table contains two key components:
       └── 00000000000000000002.json
 ```
 Parquet files → actual data
+
 _delta_log JSON files → metadata, schema, operations, versions
 
-✅ 2. ACID Transactions
+### ✅ 2. ACID Transactions
 
 Delta Lake provides full ACID guarantees:
 
 Feature	Description
-Atomicity	A write happens fully or not at all
-Consistency	Table always stays valid
-Isolation	Readers never see half-written data
-Durability	Once committed, the data stays safe
+- Atomicity	A write happens fully or not at all
+- Consistency	Table always stays valid
+- Isolation	Readers never see half-written data
+- Durability	Once committed, the data stays safe
 
 These properties make Delta Lake production-ready for batch and streaming pipelines.
 
-✅ 3. Schema Enforcement
+### ✅ 3. Schema Enforcement
 
 Delta Lake blocks bad/dirty data from entering your table.
 
 Examples of violations:
 
-Wrong column datatype
-Missing required columns
-Extra unexpected columns
-Invalid schema evolution
+- Wrong column datatype
+- Missing required columns
+- Extra unexpected columns
+- Invalid schema evolution
 
 👉 This makes your pipelines stable, consistent, and trustworthy.
 
-✅ 4. Time Travel
+### ✅ 4. Time Travel
 
 Delta Lake maintains a full version history inside the _delta_log folder.
 
 Use cases:
 
-Restore older versions
-Debug data issues
-Re-run ML models on historic data
-Perform audits & compliance checks
+- Restore older versions
+- Debug data issues
+- Re-run ML models on historic data
+- Perform audits & compliance checks
 
-Examples (not included here by request):
+Examples :
 
-VERSION AS OF 0
-TIMESTAMP AS OF '2024-01-01'
-✅ 5. MERGE (UPSERT) Operations
+- VERSION AS OF 0
+- TIMESTAMP AS OF '2024-01-01'
+
+### ✅ 5. MERGE (UPSERT) Operations
 
 Delta MERGE allows:
 
-Insert new rows
-Update existing rows
-Deduplication
-Change Data Capture (CDC)
+- Insert new rows
+- Update existing rows
+- Deduplication
+- Change Data Capture (CDC)
 
 This is essential for incremental ETL pipelines.
 
@@ -79,11 +81,17 @@ This is essential for incremental ETL pipelines.
 You performed:
 
 ✔ Created a Spark DataFrame
+
 ✔ Saved it as a Delta table
+
 ✔ Viewed metadata (DESCRIBE DETAIL)
+
 ✔ Viewed table history (DESCRIBE HISTORY)
+
 ✔ Explored the Delta transaction logs
+
 ✔ Observed table versioning
+
 ✔ Checked number of files & metadata
 
 You also learned:
