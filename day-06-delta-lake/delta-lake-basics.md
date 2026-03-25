@@ -119,15 +119,20 @@ How Delta auto-updates the commit history
 By completing Day 6, you now understand:
 
 ✔ How Delta Lake stores and manages data
+
 ✔ ACID transactions
+
 ✔ Schema enforcement & evolution
+
 ✔ Time Travel & versioning
+
 ✔ Incremental ETL with MERGE
+
 ✔ How Databricks shows Delta logs & metadata
 
 These are core skills for Azure Data Engineers working with:
 
-Azure Databricks
-Delta Lake
-Lakehouse Architecture
-Enterprise ETL pipelines
+- Azure Databricks
+- Delta Lake
+- Lakehouse Architecture
+- Enterprise ETL pipelines
