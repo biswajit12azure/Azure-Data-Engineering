@@ -337,15 +337,14 @@ Performance results help explain:
 - Why Avro is ideal for Kafka & streaming
 - Why CSV is still popular for simple data exchange
 ### Deliverables
-```
-day-07-file-formats/
-│
-├── file-format-basics.md
-├── csv-vs-parquet-vs-avro.png
-├── read-time-comparison.png
-├── size-comparison.png
-└── file_comparison.ipynb
-```
+
+Contains:
+
+- file-format-basics.md
+- csv-vs-parquet-vs-avro.png
+- read-time-comparison.png
+- size-comparison.png
+- ile_comparison.ipynb
 
 ## 🛠 Technologies Used
 
