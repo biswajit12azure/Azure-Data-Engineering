@@ -337,7 +337,7 @@ Performance results help explain:
 - Why Avro is ideal for Kafka & streaming
 - Why CSV is still popular for simple data exchange
 ### Deliverables
-
+```
 day-07-file-formats/
 │
 ├── file-format-basics.md
@@ -345,6 +345,7 @@ day-07-file-formats/
 ├── read-time-comparison.png
 ├── size-comparison.png
 └── file_comparison.ipynb
+```
 
 ## 🛠 Technologies Used
 
