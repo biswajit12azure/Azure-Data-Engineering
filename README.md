@@ -304,6 +304,7 @@ Contains:
 - Screenshots from Databricks lab
 
 ## 🚀 Day 7 – File Formats (CSV, Parquet, Avro)
+![File_Comparison](day-07-file-formats/readtime_comparison.png)
 ### Topics Covered
 - When to use CSV
 - Why Parquet is faster (columnar storage)
