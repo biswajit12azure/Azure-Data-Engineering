@@ -14,7 +14,7 @@ Day 5 | Data Lake Lab using Azurite | ✅ Completed
 Day 6 | Delta Lake Fundamentals  |  ✅ Completed
 Day 7 | File Formats (CSV, Parquet, Avro)  |  ✅ Completed
 
-I am documenting everything I learn each day — with code examples, Google Colab notebooks, theory notes, visuals, and output files.
+I am documenting everything I learn each day — with code examples, Google Colab notebooks, Databricks notebooks, Screenshots, theory notes, visuals, and output files.
 
 ## 🚀 Day 1 – ETL vs ELT Fundamentals
 
