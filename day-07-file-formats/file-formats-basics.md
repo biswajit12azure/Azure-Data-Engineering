@@ -63,3 +63,22 @@ All files are stored under:
 ```
 /Volumes/workspace/default/biswajit/
 ```
+### 1️⃣ Generate 1 Million Records (Synthetic Dataset)
+```python
+from pyspark.sql.functions import rand, round, udf
+from pyspark.sql.types import StringType
+
+names = ["John", "Ana", "Ravi", "Maya", "Leo", "Sara", "Tom", "Nina"]
+
+df_large = spark.range(1_000_000) \
+    .withColumn("name_idx", round(rand() * len(names)).cast("int")) \
+    .withColumn("salary", (rand() * 1_000_000).cast("int"))
+
+def pick_name(i):
+    return names[i % len(names)]
+
+name_udf = udf(pick_name, StringType())
+df_large = df_large.withColumn("name", name_udf("name_idx")).drop("name_idx")
+
+df_large.show(5)
+```
