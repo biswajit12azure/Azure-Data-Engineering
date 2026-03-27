@@ -303,6 +303,47 @@ Contains:
 - Notes
 - Screenshots from Databricks lab
 
+## 🚀 Day 7 – File Formats (CSV, Parquet, Avro)
+### Topics Covered
+- When to use CSV
+- Why Parquet is faster (columnar storage)
+- Avro for streaming & schema evolution
+- Compression and encoding concepts
+- Performance comparison: Size & Read Time
+### 📘 Format Comparison Summary
+| Format      | Size   | Read Speed | Best For                      |
+| ----------- | ------ | ---------- | ----------------------------- |
+| **CSV**     | Large  | Slow       | Logs, raw ingestion           |
+| **Parquet** | Small  | Very Fast  | Analytics, big data workloads |
+| **Avro**    | Medium | Medium     | Streaming, message pipelines  |
+
+### 🧪 Hands-on Lab (Google Colab + PySpark)
+
+You practiced:
+
+✔ 1. Read dataset in CSV
+✔ 2. Convert CSV → Parquet
+✔ 3. Convert CSV → Avro
+✔ 4. Compare file sizes
+✔ 5. Compare Spark read time
+
+Performance results help explain:
+
+- Why Parquet is preferred for analytics
+- Why Avro is ideal for Kafka & streaming
+- Why CSV is still popular for simple data exchange
+## 📁 Folder: day-07-file-formats/
+
+Recommended structure:
+
+day-07-file-formats/
+│
+├── file-format-basics.md
+├── csv-vs-parquet-vs-avro.png
+├── read-time-comparison.png
+├── size-comparison.png
+└── notebook-file-formats.ipynb
+
 ## 🛠 Technologies Used
 
 - Python
@@ -311,8 +352,7 @@ Contains:
 - GitHub
 - Data Engineering Concepts
 - PySpark
-- Azurite
-- Azure Storage Concepts
+- Azurite, Azure Storage
 - Databricks
 
 ## 📚 Repository Structure
@@ -349,6 +389,13 @@ azure-data-engineering
 │   ├── delta-log-example.png
 │   ├── Screenshot-Databricks.jpeg
 │   └── notes/
+│
+├── day-07-file-formats/
+│   ├── file-format-basics.md
+│   ├── csv-vs-parquet-vs-avro.png
+│   ├── size-comparison.png
+│   ├── read-time-comparison.png
+│   └── file_comparison.ipynb
 │
 ├── datasets
 │
