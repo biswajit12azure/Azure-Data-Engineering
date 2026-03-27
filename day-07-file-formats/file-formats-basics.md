@@ -3,6 +3,12 @@
 This session covers three essential file formats every Data Engineer must understand.  
 These formats impact **performance**, **storage cost**, and **pipeline speed**.
 
+# 🎯 Learning Objectives
+- Understand when to use CSV, Parquet, and Avro
+- Explore columnar vs row-based storage
+- Compare file size behavior
+- Measure read performance using Spark
+- Work with Databricks Volumes (since DBFS is disabled in CE)
 ---
 
 ## 🗂️ 1. CSV (Comma Separated Values)
@@ -45,16 +51,15 @@ These formats impact **performance**, **storage cost**, and **pipeline speed**.
 
 ---
 
-# 🧪 Hands-on (Google Colab / Databricks)
+# 🧪 Lab Setup (Google Colab / Databricks)
 
 ### Install libraries
 ```python
 !pip install pyspark fastavro
 ```
+## 📍 Volume Path
 
-# 🎯 Learning Objectives
-Understand when to use CSV, Parquet, and Avro
-Explore columnar vs row-based storage
-Compare file size behavior
-Measure read performance using Spark
-Work with Databricks Volumes (since DBFS is disabled in CE)
+All files are stored under:
+```
+/Volumes/workspace/default/biswajit/
+```
