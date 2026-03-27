@@ -345,7 +345,7 @@ Contains:
 - csv-vs-parquet-vs-avro.png
 - read-time-comparison.png
 - size-comparison.png
-- ile_comparison.ipynb
+- file_comparison.ipynb
 
 ## 🛠 Technologies Used
 
