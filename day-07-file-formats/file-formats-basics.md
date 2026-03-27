@@ -50,3 +50,11 @@ These formats impact **performance**, **storage cost**, and **pipeline speed**.
 ### Install libraries
 ```python
 !pip install pyspark fastavro
+```
+
+# 🎯 Learning Objectives
+Understand when to use CSV, Parquet, and Avro
+Explore columnar vs row-based storage
+Compare file size behavior
+Measure read performance using Spark
+Work with Databricks Volumes (since DBFS is disabled in CE)
