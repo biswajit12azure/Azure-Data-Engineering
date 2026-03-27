@@ -338,8 +338,9 @@ Performance results help explain:
 - Why CSV is still popular for simple data exchange
 ### Deliverables
 
-Contains:
+📂 Folder: day-07-file-formats/
 
+Contains:
 - file-format-basics.md
 - csv-vs-parquet-vs-avro.png
 - read-time-comparison.png
