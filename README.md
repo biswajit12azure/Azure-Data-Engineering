@@ -322,9 +322,13 @@ Contains:
 You practiced:
 
 ✔ 1. Read dataset in CSV
+
 ✔ 2. Convert CSV → Parquet
+
 ✔ 3. Convert CSV → Avro
+
 ✔ 4. Compare file sizes
+
 ✔ 5. Compare Spark read time
 
 Performance results help explain:
@@ -332,9 +336,7 @@ Performance results help explain:
 - Why Parquet is preferred for analytics
 - Why Avro is ideal for Kafka & streaming
 - Why CSV is still popular for simple data exchange
-## 📁 Folder: day-07-file-formats/
-
-Recommended structure:
+### Deliverables
 
 day-07-file-formats/
 │
@@ -342,7 +344,7 @@ day-07-file-formats/
 ├── csv-vs-parquet-vs-avro.png
 ├── read-time-comparison.png
 ├── size-comparison.png
-└── notebook-file-formats.ipynb
+└── file_comparison.ipynb
 
 ## 🛠 Technologies Used
 
